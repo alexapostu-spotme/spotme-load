@@ -1,6 +1,5 @@
-const speaker_url = 'https://eu.backstage.spotme-stage.com/live-session/d8046a47a2d69c2dd18fe94c025da31d/18970171-8800-496f-b76c-1b71d92bc527?accredited_link_token=eb802dac-04a0-4860-a8ed-557e0672412a'
-const moderator_url = 'https://eu.backstage.spotme-stage.com/live-session/d8046a47a2d69c2dd18fe94c025da31d/18970171-8800-496f-b76c-1b71d92bc527?accredited_link_token=8ab5a19b-650a-4081-95cc-bb2772adcadf'
-
+const moderator_url = 'https://eu.backstage.spotme-stage.com/live-session/cef255aa234ee5dd3df78b022a54cd29/13aae38b-75a5-4bf3-9ba6-5302ba32f50c?accredited_link_token=04ea728e-e46e-4f64-bd12-8439877f2249'
+const speaker_url = 'https://eu.backstage.spotme-stage.com/live-session/cef255aa234ee5dd3df78b022a54cd29/13aae38b-75a5-4bf3-9ba6-5302ba32f50c?accredited_link_token=fe18280f-bcc8-42c9-980a-e46f36b81af6'
 module.exports = {
     speaker_url,
     moderator_url

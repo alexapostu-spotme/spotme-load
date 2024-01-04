@@ -36,8 +36,8 @@ export class ModeratorPage {
     getVideoProcessing(){
         return $('.thumbnail-processing-overlay')
     }
-    getVideoBadge(){
-        return $('.badge')
+    getVideoThumbnail(){
+        return $('.video-thumbnail')
     }
 
     getPlayNowButton(){

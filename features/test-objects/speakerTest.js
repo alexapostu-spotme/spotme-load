@@ -6,7 +6,7 @@ import { speaker_url, moderator_url } from "../support/data";
 const randomNumber = Math.floor(Math.random() * 100) + 1;
 
 
-const randomName = `Alex${randomNumber}`;
+const randomName = `Speaker${randomNumber}`;
 
 export class SpeakerTest {
     async openSpeakerPage(){

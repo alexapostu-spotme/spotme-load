@@ -48,6 +48,8 @@ export class ModeratorTest {
         });
         //await browser.pause(120000)
         await browser.pause(3000)
+        await pages.moderatorPage.getVideoThumbnail().waitForExist()
+        await browser.pause(3000)
         await pages.moderatorPage.getPlayNowButton().waitForExist()
         await browser.pause(3000)
         await pages.moderatorPage.getPlayNowButton().click()
