@@ -12,3 +12,9 @@ Then("I should see all 10 speakers camera feed", async () => {
     await tests.speakerTest.enterStudio()
 });
 
+Given("Moderator adds video", async () =>{
+    await tests.moderatorTest.openModeratorPage()
+    await tests.moderatorTest.enterStudio()
+    await tests.moderatorTest.addVideo()
+})
+

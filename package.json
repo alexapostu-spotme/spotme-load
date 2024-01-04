@@ -11,8 +11,9 @@
     "concurrently": "^8.2.2"
   },
   "scripts": {
-    "wdio":"concurrently -n 'WDIO' -c 'bgBlue.bold,bgMagenta.bold,bgGreen.bold,bgYellow.bold,bgRed.bold' \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\"",
+    "wdio":"concurrently -n 'WDIO' -c 'bgBlue.bold,bgMagenta.bold,bgGreen.bold,bgYellow.bold,bgRed.bold' \"npm run singleTag @moderator\" \"npm run singleTag @speaker\" \"npm run singleTag @speaker\" \"npm run singleTag @speaker\" \"npm run singleTag @speaker\"",
     "wdio-instance": "wdio run ./wdio.conf.js",
-    "wdio1": "wdio run ./wdio.conf.js"
+    "wdio1": "wdio run ./wdio.conf.js",
+    "singleTag": "wdio run ./wdio.conf.js --cucumberOpts.tagExpression"
   }
 }

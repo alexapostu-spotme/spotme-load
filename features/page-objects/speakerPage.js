@@ -15,8 +15,8 @@ export class SpeakerPage {
     getEnterStreamAnyway(){
         return $(".buttons .btn.btn-default.enter-studio")
     }
-    xyz(){
-
+    getResultsHeader(){
+        return $('.results-header')
     }
     xyz(){
 

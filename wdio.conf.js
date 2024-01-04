@@ -17,7 +17,7 @@ export const config = {
     maxInstances: 10,
  
     capabilities: [{
-        maxInstances:10,
+        //maxInstances:10,
         browserName: 'chrome',
         'goog:chromeOptions': {
             args: [
@@ -56,11 +56,11 @@ export const config = {
     baseUrl: 'http://localhost',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 120000,
+    waitforTimeout: 250000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
+    connectionRetryTimeout: 250000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -115,7 +115,7 @@ export const config = {
         // <string> (expression) only execute the features or scenarios with tags matching the expression
         tagExpression: '',
         // <number> timeout for step definitions
-        timeout: 120000,
+        timeout: 250000,
         // <boolean> Enable this config to treat undefined definitions as warnings.
         ignoreUndefinedDefinitions: false
     },
