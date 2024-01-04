@@ -17,7 +17,7 @@ export const config = {
     maxInstances: 10,
  
     capabilities: [{
-        maxInstances:1,
+        maxInstances:10,
         browserName: 'chrome',
         'goog:chromeOptions': {
             args: [
@@ -26,16 +26,16 @@ export const config = {
             ],
           }
     },
-    {
-        maxInstances:1,
-        browserName: 'chrome',
-        'goog:chromeOptions': {
-            args: [
-              '--use-fake-ui-for-media-stream',
-              '--use-fake-device-for-media-stream',
-            ],
-          }
-    }
+    // {
+    //     maxInstances:1,
+    //     browserName: 'chrome',
+    //     'goog:chromeOptions': {
+    //         args: [
+    //           '--use-fake-ui-for-media-stream',
+    //           '--use-fake-device-for-media-stream',
+    //         ],
+    //       }
+    // }
 ],
 
     //
@@ -56,11 +56,11 @@ export const config = {
     baseUrl: 'http://localhost',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 250000,
+    waitforTimeout: 120000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 250000,
+    connectionRetryTimeout: 120000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -115,7 +115,7 @@ export const config = {
         // <string> (expression) only execute the features or scenarios with tags matching the expression
         tagExpression: '',
         // <number> timeout for step definitions
-        timeout: 250000,
+        timeout: 120000,
         // <boolean> Enable this config to treat undefined definitions as warnings.
         ignoreUndefinedDefinitions: false
     },

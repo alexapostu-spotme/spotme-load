@@ -30,7 +30,7 @@ export class SpeakerTest {
         }else{
             await pages.speakerPage.getEnterStudioButton().click()
         }
-        await browser.pause(120000)
+        await browser.pause(120000) //wait in the stream for 120 seconds
         
     }
     

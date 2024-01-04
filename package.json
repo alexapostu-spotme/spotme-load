@@ -7,9 +7,12 @@
     "@wdio/cli": "^8.27.1",
     "@wdio/cucumber-framework": "^8.27.1",
     "@wdio/local-runner": "^8.27.0",
-    "@wdio/spec-reporter": "^8.27.0"
+    "@wdio/spec-reporter": "^8.27.0",
+    "concurrently": "^8.2.2"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio":"concurrently -n 'WDIO' -c 'bgBlue.bold,bgMagenta.bold,bgGreen.bold,bgYellow.bold,bgRed.bold' \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\" \"npm run wdio-instance\"",
+    "wdio-instance": "wdio run ./wdio.conf.js",
+    "wdio1": "wdio run ./wdio.conf.js"
   }
 }
